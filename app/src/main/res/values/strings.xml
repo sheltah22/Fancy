@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fancy</string>
+    <string name="login_button">Log In</string>
+    <string name="signup_button">Sign Up</string>
+
+    <string name="signup_heading">Sign Up</string>
+    <string name="username_field">Username</string>
+    <string name="password_field">Password</string>
+    <string name="email_field">Email</string>
+    <string name="signup_now_button">Sign Up Now!</string>
+
+    <string name="login_heading">Log In</string>
+</resources>
