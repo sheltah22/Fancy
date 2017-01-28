@@ -12,19 +12,33 @@ import java.util.ArrayList;
 
 public class Home extends AppCompatActivity {
     public static final String EXTRA_NAME = "extra_name";
+    public JSONArray jsonArray;
+    public TextView tvMain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        String name = getIntent().getStringExtra(EXTRA_NAME);
+        /*String name = getIntent().getStringExtra(EXTRA_NAME);
         TextView txt = (TextView) findViewById(R.id.greetingText);
         txt.setText("Hi " + name);
 
         ArrayList<User> arrayOfUsers = new ArrayList<User>();
         UsersAdapter adapter = new UsersAdapter(this, arrayOfUsers);
         ListView listView = (ListView) findViewById(R.id.lvItems);
-        listView.setAdapter(adapter);
+        listView.setAdapter(adapter);*/
+
+        AsyncRetrieval asyncRetrieval = new AsyncRetrieval();
+        tvMain = (TextView) findViewById(R.id.tvHome);
+
+        try {
+            tvMain.setText(asyncRetrieval.execute().get());
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
     }
 }

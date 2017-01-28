@@ -23,7 +23,7 @@ import okhttp3.Response;
 
 public class AsyncRetrieval extends AsyncTask<Void, Void, String> {
 
-    private static final String URL = "http://appdev.grinnell.edu/members.json";
+    private static final String URL = "http://www.cs.grinnell.edu/~pradhanp/android.json";
     public String body;
 
     @Override
@@ -65,4 +65,6 @@ public class AsyncRetrieval extends AsyncTask<Void, Void, String> {
     protected void onPostExecute(String aString) {
         super.onPostExecute(aString);
     }
+
+
 }
