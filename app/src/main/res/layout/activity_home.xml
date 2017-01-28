@@ -14,9 +14,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:id="@+id/greetingText"
+        android:id="@+id/tvHome"
         />
 
+    <!--
     <ListView
         android:id="@+id/lvItems"
         android:layout_width="match_parent"
@@ -26,5 +27,6 @@
         android:layout_toEndOf="@+id/greetingText">
 
     </ListView>
+    -->
 
 </RelativeLayout>
